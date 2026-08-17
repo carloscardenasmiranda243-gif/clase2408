@@ -1,0 +1,15 @@
+classDiagram
+    class Vehiculo {
+        # String modelo
+        # int año
+        + Vehiculo(String modelo, int año)
+        + void mostrarInfo()
+    }
+    
+    class Auto {
+        - int puertas
+        + Auto(String modelo, int año, int puertas)
+        + void mostrarDetalles()
+    }
+
+    Vehiculo <|-- Auto : hereda
